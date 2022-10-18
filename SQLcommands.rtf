@@ -53,6 +53,10 @@ SELECT * FROM webDev ORDER BY Module_Name ASC LIMIT 4;\
 SELECT name, CASE WHEN imdb_rating > 8 THEN 'Fantastic' WHEN imdb_rating > 6 THEN 'Poorly Received' ELSE 'Avoid at All Costs' END AS 'Review' FROM movies;\
 \
 SELECT name, CASE WHEN genre = 'romance' THEN 'Chill' WHEN genre = 'comedy' THEN 'Chill' ELSE 'Intense' END AS 'Situation' FROM movies;\
+
+
+SHOW COLUMNS FROM db.table;
+
 \
 \
 \

@@ -5,3 +5,5 @@ node_modules/
 **/*.sh
 .idea
 .env
+Week2/homework/package-lock.json
+Week2/homework/package.json

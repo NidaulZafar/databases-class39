@@ -112,3 +112,6 @@ CREATE TABLE students_across_schools (
 
 Syntax to select author's id, name and mentor's name from the same table where author's id is the PK and mentor is the FK associated with the PK (author's id)
 SELECT authors.author_id ,authors.author_name, Mentor.author_name AS Mentors FROM authors left JOIN authors Mentor ON authors.Mentor = Mentor.author_id;
+
+Syntax to create and store result of a query in a table. 
+CREATE TABLE Authors_and_Papers SELECT authors.*, research_papers.paper_title FROM Authors LEFT JOIN research_papers ON authors.author_id = research_papers.Author_id;

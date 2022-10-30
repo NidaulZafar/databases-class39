@@ -23,9 +23,16 @@ SELECT Module_Name FROM webDev;
 
 ALTER TABLE webDev ADD COLUMN Remarks TEXT;
 
+UPDATE syntax
+UPDATE mytable
+SET column = value_or_expr, 
+    other_column = another_value_or_expr, 
+    …
+WHERE condition;
+
+
+
 UPDATE webDev SET id = 2 WHERE Module_Name = 'CSS';
-
-
 
 BEFORE:
 

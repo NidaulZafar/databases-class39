@@ -7,6 +7,14 @@ DROP TABLE webDev;
 
 CREATE TABLE webDev (id INTEGER, Module Name TEXT);
 
+Insert syntax
+INSERT INTO mytable
+(column, another_column, …)
+VALUES (value_or_expr, another_value_or_expr, …),
+      (value_or_expr_2, another_value_or_expr_2, …),
+      …;
+
+
 INSERT INTO webDev (id, Module_Name) VALUES (1, 'HTML');
 
 SELECT * FROM webDev;

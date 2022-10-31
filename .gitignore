@@ -7,3 +7,5 @@ node_modules/
 .env
 Week2/homework/package-lock.json
 .gitignore
+mongodb_practice/package-lock.json
+mongodb_practice/package.json

@@ -1,4 +1,4 @@
-import mysql from "mysql";
+const mysql = require('mysql');
 
 const conn = mysql.createConnection({
     host: "localhost",

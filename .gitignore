@@ -6,4 +6,5 @@ node_modules/
 .idea
 .env
 Week2/homework/package-lock.json
-Week2/homework/package.json
+package.json
+package-lock.json

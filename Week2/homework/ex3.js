@@ -19,7 +19,12 @@ connection.query("CREATE TABLE Authors_and_Mentors SELECT authors.author_id, aut
     }
     console.log("Table of Authors and their Mentors created")
 })
-connection.query("CREATE TABLE Authors_and_Papers SELECT authors.*, research_papers.paper_title FROM Authors LEFT JOIN research_papers ON authors.author_id = research_papers.Author_id;", (err, result) => {
+connection.query(`CREATE TABLE Authors_and_Papers SELECT authors.*, research_Papers.paper_title 
+FROM publish_records
+JOIN authors 
+ON publish_records.author_id = authors.author_id
+JOIN  research_Papers 
+ON  research_Papers.paper_id = publish_records.paper_id;`, (err, result) => {
     if (err) {
         throw err;
     }

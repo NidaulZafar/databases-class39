@@ -1,7 +1,10 @@
 import { MongoClient } from "mongodb";
 import { transaction } from "./transfer.js";
 import { createAccount } from "./setup.js";
-const uri = `mongodb+srv://mongodb:mongodb@cluster1.qnbcuf7.mongodb.net/?retryWrites=true&w=majority`;
+
+import * as dotenv from 'dotenv';
+dotenv.config();
+const uri = process.env.MONGODB_URL;
 
 const client = new MongoClient(uri);
 export const collection = client.db('databaseWeek4').collection('accounts');

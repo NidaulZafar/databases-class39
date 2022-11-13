@@ -1,12 +1,12 @@
-import mysql from "mysql";
+import mysql from "mysql2";
 import {    TABLES          } from "./transactions-create-tables.js";
 import {    INSERT_DATA     } from "./transactions-insert-values.js";
 import {    transactionQueries     } from "./transactionQueries.js";
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'hyfuser',
-    password: 'hyfpassword',
+    user: 'newuser',
+    password: 'hackmyfuture'
 });
 
 connection.connect((err) => {

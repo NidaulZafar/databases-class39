@@ -1,5 +1,9 @@
 const { MongoClient, ServerApiVersion, Collection } = require("mongodb");
-const uri = `mongodb+srv://mongodb:mongodb@cluster1.qnbcuf7.mongodb.net/?retryWrites=true&w=majority`;
+const dotenv = require('dotenv');
+dotenv.config();
+
+const uri = process.env.MONGODB_URL
+
 
 const client = new MongoClient(uri);
 const collection = client.db('databaseWeek4').collection('populationRecords');
@@ -11,11 +15,6 @@ async function main() {
     } catch (e) {
         console.error(e);
     }
-    // finally {
-    //     await client.close();
-    // }
-
-
 }
 
 main().catch(console.error);

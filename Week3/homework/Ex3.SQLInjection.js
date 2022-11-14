@@ -15,9 +15,12 @@ const showData = (error, results) => {
     }
 };
   
+
+const inputCountryName = "'Abc' OR 1=1";
+const inputCountryCode = "'NED' OR 1=1";
 // Example of SQL injection
 conn.query(
-    `SELECT Population FROM country WHERE Name ='Abc' OR 1=1  and code = 'Abc' OR 1=1`,
+    `SELECT Population FROM country WHERE Name = ${inputCountryName}  and code = ${inputCountryCode}`,
     showData
   );
 
